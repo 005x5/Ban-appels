@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team 005x5 - Ban Appeal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1e1f22 0%, #2b2d31 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .container {
+      background: #313338;
+      border-radius: 12px;
+      padding: 32px;
+      width: 100%;
+      max-width: 520px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      border: 1px solid #1e1f22;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+      text-align: center;
+      color: #5865f2;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #b5bac1;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #dbdee1;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 18px;
+      background: #1e1f22;
+      border: 1px solid #1e1f22;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 15px;
+      resize: vertical;
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #5865f2;
+    }
+
+    textarea {
+      min-height: 90px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #5865f2;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #4752c4;
+    }
+
+    button:disabled {
+      background: #4e5058;
+      cursor: not-allowed;
+    }
+
+    .status {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 14px;
+      min-height: 20px;
+    }
+
+    .status.success { color: #3ba55d; }
+    .status.error { color: #ed4245; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Team 005x5 Ban Appeal</h1>
+    <p class="subtitle">Submit your appeal to be unbanned from the Team 005x5 Discord server.</p>
+
+    <form id="appealForm">
+      <label for="username">Your Discord Username</label>
+      <input type="text" id="username" name="username" placeholder="e.g. username#1234" required />
+
+      <label for="reason">Why were you banned?</label>
+      <textarea id="reason" name="reason" placeholder="Explain why you got banned..." required></textarea>
+
+      <label for="behavior">How would you behave in the future?</label>
+      <textarea id="behavior" name="behavior" placeholder="Explain how you would behave if unbanned..." required></textarea>
+
+      <button type="submit" id="submitBtn">Submit Appeal</button>
+      <div class="status" id="status"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
