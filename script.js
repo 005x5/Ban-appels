@@ -1,4 +1,4 @@
-const WEBHOOK_URL = 'https://discord.com/api/webhooks/1564011267474071612/gW90gDZ-aqsksqGuxN8DYBBDp0si8oER-7nU7bkx0_CCvotBOegifFl9t3bq-H2o0rX9';
+const WEBHOOK_URL = 'https://discord.com/api/webhooks/1564265083121438770/cqOIN14e-JImhLl4Ra3HU3WU7TNYiiiLsc9EB3l1aQXHtG5PRHMhOcQ3ONS2oly4ojz_';
 const form = document.getElementById('appealForm');
 const submitBtn = document.getElementById('submitBtn');
 const statusEl = document.getElementById('status');
